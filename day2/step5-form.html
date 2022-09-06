@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registeration Form</title>
+</head>
+<body>
+    <h1>Registeration From</h1>
+    <form action="#" method="get">
+        <table>
+            <tbody>
+             <tr>
+                 <th> User Name </th>
+                 <td> <input name="uname" required autocomplete="off" placeholder="Enter Full Name" type="text"/> </td>
+             </tr>
+             <tr>
+                 <th> User eMail </th>
+                 <td> <input name="email" required pattern="\S+@\S+\.\S+" placeholder="Official email" type="email"/> </td>
+             </tr>
+             <tr>
+                 <th> User Phone </th>
+                 <td> <input autofocus title="###-####-####" pattern="\d{3}-\d{4}-\d{4}" required name="phone" placeholder="your land phone" type="tel"/> </td>
+             </tr>
+             <tr>
+                 <th> &nbsp; </th>
+                 <td> 
+                    <input type="submit" value="Register">
+                    <!-- <button>
+                        <h1>Register Here</h1>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat autem pariatur, atque fugit ab magni, accusamus fuga repellendus quis culpa et corporis obcaecati dolor aliquam hic in. Ipsa, iste.
+                        </p>
+                    </button>    --> 
+                </td>
+             </tr>
+            </tbody>
+         </table>
+    </form>
+    <datalist id="roles">
+        <option value="Designer"></option>
+        <option value="Developer"></option>
+        <option value="Manager"></option>
+        <option value="Full Stack Dev"></option>
+    </datalist>
+    <input list="roles" type="list">
+</body>
+</html>

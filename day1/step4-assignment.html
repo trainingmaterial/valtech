@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+    <script>
+        function changeBGCol(col){
+            document.getElementsByClassName("container")[0].style.backgroundColor = col.value;
+        }
+        function changeFontCol(col){
+            document.getElementsByClassName("container")[0].style.color = col.value;
+        }
+    </script>
+</head>
+<body>
+    <label> Set Background color
+        <input onchange="changeBGCol( this )" type="color">
+    </label>
+    <br>
+    <label> Set Font color
+        <input onchange="changeFontCol( this )" type="color">
+    </label>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptatem delectus, architecto numquam eveniet perspiciatis, rem excepturi non veniam tenetur pariatur incidunt? Voluptatibus quam tempore suscipit dolor repudiandae aliquam?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ducimus? Cum quas porro aliquid exercitationem. Ipsum voluptates minima odit vero aliquid aliquam, tempora error labore veritatis laboriosam dolores ratione? Dolore!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ullam, temporibus commodi animi magnam iure harum dolorem dolorum recusandae delectus ipsa, deleniti aperiam fugit aliquam officiis in reprehenderit ad molestias.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati expedita placeat magnam similique. Pariatur nesciunt, id nam delectus voluptatibus expedita sed blanditiis, magnam dicta numquam totam quam odio corrupti quia?
+    </div>
+</body>
+</html>
