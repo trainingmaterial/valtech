@@ -18,6 +18,12 @@
         function clearInfo(){
             localStorage.clear();
         }
+        function getKeyName(){
+            alert( localStorage.key(0) );
+        }
+        function getLength(){
+            alert( localStorage.length );
+        }
     </script>
 </head>
 <body>
@@ -44,5 +50,7 @@
         </tbody>
      </table>
      <button onclick="clearInfo()">Clear</button>
+     <button onclick="getKeyName()">get key name</button>
+     <button onclick="getLength()">get number of stored users</button>
 </body>
 </html>
