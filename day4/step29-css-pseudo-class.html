@@ -22,14 +22,15 @@
             background-color: aquamarine;
             padding: 10px;
             margin: 10px;
-            width: 600px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p:first-line{
+            color: red;
         }
         p:hover{
             background-color: rgb(57, 152, 121);
             padding: 10px;
             margin: 10px;
-            width: 600px;
         }
         section, article, aside{
             width: 600px;
@@ -53,11 +54,14 @@
             padding: 10px;
             margin: 0px;
         }
+        ul li:after{
+            content : "<<<<";
+        }
     </style>
 </head>
 <body>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia harum architecto laborum neque repellat? Sunt, magni ad! Corporis et officiis eum impedit minima! Dicta atque officia, totam rem culpa non.
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia harum architecto laborum neque repellat? Sunt, magni</span> ad! Corporis et officiis eum impedit minima! Dicta atque officia, totam rem culpa non.
     </p>
     <a>Dummy Anchor Tag</a>
     <br>
@@ -71,6 +75,14 @@
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
 
     <section>
         SECTION
